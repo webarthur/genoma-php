@@ -1,0 +1,26 @@
+
+1. Resolver transcode
+2. Codificar dna.css
+3. Elaborar ambiente de testes
+
+
+TRANSCODE
+ - elementos tipo cromossomos nao externam classes genes
+
+"btn-lg" : "[button][large]",
+"btn-sm" : "[button][small]",
+"btn-xs" : "[button][x-small]",
+=> <button> & <a button>
+
+"col-":"column",
+"row-":"row",
+
+forms
+
+media -> cofunsing
+
+icons
+
+pager, previus, next
+panel
+-> excesso de tags
