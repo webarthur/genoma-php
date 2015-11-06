@@ -67,19 +67,49 @@ class DNA {
 
         if( strpos($new_gene, '[')>-1 ) {
 
-          $new_gene = preg_replace("/^[^\[]*/", '', $new_gene);
-          $new_gene = preg_replace("/^\[/", '', $new_gene);
-          $new_gene = preg_replace("/\]$/", '', $new_gene);
-          echo '> '.$new_gene.'<br />';
+          $attr = SELF::get_attr($new_gene);
+
+          // $attr = preg_replace("/^[^\[]*/", '', $new_gene);
+          // $attr = preg_replace("/^\[/", '', $attr);
+          // $attr = preg_replace("/\]$/", '', $attr);
+          echo '> '.$attr.'<br />';
           $el->class = trim(str_replace(" $gene ", ' ', " ".$el->class." "));
-          $el->$new_gene = "____dna____";
+          $el->$attr = "____dna____";
+
+          if( strpos($new_gene, '[')>0 ) {
+            $tag = SELF::get_tag($new_gene);
+            SELF::replace_tag($el, $gene, $tag);
+          }
+
         } else {
-          $el->class = trim(str_replace(" $gene ", ' ', " ".$el->class." "));
-          $el->tag = $new_gene;
+          SELF::replace_tag($el, $gene, $new_gene);
         }
 
       }
     }
+  }
+
+  static function get_tag($tag){
+    $tag = explode('[', $tag);
+    return $tag[0];
+  }
+
+  static function get_attr($attr){
+    $attr = explode('[', $attr);
+    $attr = preg_replace("/\]$/", '', $attr);
+    $attr = end($attr);
+
+    if( strpos($attr, ']')>0 ) {
+      $attr = explode(']', $attr);
+      $attr = end($attr);
+    }
+
+    return $attr;
+  }
+
+  static function replace_tag(&$el, $gene, $new_gene){
+    $el->class = trim(str_replace(" $gene ", ' ', " ".$el->class." "));
+    $el->tag = $new_gene;
   }
 
   // genoma rules

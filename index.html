@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Genoma-CSS</title>
+    <link rel="shortcut icon" type="image/png" href="genoma-css.png"/>
+    <link href="dna.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav bar default>
+      <container-fluid>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <header>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" collapsed>
+            <span sr-only>Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" brand>Brand</a>
+        </header>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav class="collapse" id="bs-example-navbar-collapse-1" collapse>
+          <nav class="navbar-nav">
+            <li active><a href="#">Link <span sr-only>(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <dropdown>
+              <dropdown href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" toggle>Dropdown <caret></caret></dropdown>
+              <ul menu>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" divider></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" divider></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </dropdown>
+          </nav>
+          <form class="navbar-form" role="search" navbar-left>
+            <group form>
+              <input type="text" placeholder="Search" form-control>
+            </group>
+            <button type="submit" default>Submit</button>
+          </form>
+          <nav class="navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <dropdown>
+              <dropdown href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" toggle>Dropdown <caret></caret></dropdown>
+              <ul menu>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" divider></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </dropdown>
+          </nav>
+        </nav><!-- /.navbar-collapse -->
+      </container-fluid><!-- /.container-fluid -->
+    </nav>
+
+  </body>
+</html>
