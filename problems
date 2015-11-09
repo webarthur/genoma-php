@@ -24,3 +24,6 @@ icons
 pager, previus, next
 panel
 -> excesso de tags
+
+
+dropdown.open vira dropdown:focus >> tirar href do link para poder funfar

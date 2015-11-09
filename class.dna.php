@@ -75,6 +75,7 @@ class DNA {
           echo '> '.$attr.'<br />';
           $el->class = trim(str_replace(" $gene ", ' ', " ".$el->class." "));
           $el->$attr = "____dna____";
+          $el->role = null;
 
           if( strpos($new_gene, '[')>0 ) {
             $tag = SELF::get_tag($new_gene);

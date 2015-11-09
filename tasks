@@ -6,3 +6,12 @@
 - bootstrap fork => DNA
 - dna gulp package
 - DNA site
+
+Dúvidas:
+- Pra que serve roles="" ?
+- Pra que server aria-...=""?
+
+Vantagens:
+- Salva tempo
+- Veja qual tag foi fechada no final
+- Melhor semântica
