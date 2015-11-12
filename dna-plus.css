@@ -1,5 +1,19 @@
-container-fluid, [nav], well, column, toolbar, row, alert, container {display:block}
+container-fluid, [nav], well, column, toolbar, row, alert, container, navbar {display:block}
 
 body {font-family: 'Lato', sans-serif;}
 
-[float-clear] {clear:both}
+[float-clear] {clear:both!important}
+
+[no-margin] {margin:0!important}
+[no-radius] {border-radius:0!important}
+[no-border] {border:0!important}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+[mb-10] {margin-bottom:10px}
+[mt-10] {margin-top:10px}
+[pb-10] {padding-bottom:10px}
+[pt-10] {padding-top:10px}

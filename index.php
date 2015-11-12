@@ -12,10 +12,10 @@
   </head>
   <body>
 
-    <?php include 'navbar.html' ?>
+    <?php # include 'navbar.html' ?>
 
-    <navbar default>
-      <container fluid>
+    <navbar default no-margin no-radius no-border style="background:#fff">
+      <container-fluid>
         <!-- Brand and toggle get grouped for better mobile display -->
         <header>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" collapsed>
@@ -28,11 +28,11 @@
         </header>
 
         <nav class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <ul nav navbar="nav">
+            <li active><a href="#">Link <span sr-only>(current)</span></a></li>
             <li><a href="#">Link</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <caret /></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
@@ -45,10 +45,10 @@
             </li>
           </ul>
           <form navbar="form left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <group form>
+              <input form-control type="text" placeholder="Search">
+            </group>
+            <button default type="submit">Submit</button>
           </form>
           <ul nav navbar="nav right">
             <li><a href="#">Link</a></li>
@@ -70,11 +70,11 @@
               </menu> -->
             </li>
           </ul>
-        </nav><!-- /.navbar-collapse -->
-      </container><!-- /.container-fluid -->
+        </nav>
+      </container-fluid>
     </navbar>
 
-    <well bg-primary large text-center clearfix>
+    <well bg-primary large text-center clearfix no-radius no-border>
       <img src="genoma-css.png" />
       <h1>Genoma-CSS</h1>
       <p>
@@ -118,21 +118,44 @@
       <column class="col-xs-4">
         <h3>Toolbar buttons</h3>
         <toolbar>
-          <group buttons>
+          <group button>
             <button primary>1</button>
             <button danger>2</button>
             <button warning>3</button>
-            <button success>4</button>
           </group>
-          <group buttons>
+          <group button>
             <button default>5</button>
             <button default>6</button>
-            <button default>7</button>
           </group>
-          <group buttons>
+          <group button>
             <button default>8</button>
           </group>
         </toolbar>
+
+
+        <h3>Input Group</h3>
+
+        <group input mb-10>
+          <addon>$</addon>
+          <input type="text" form-control>
+          <addon>.00</addon>
+        </group>
+
+        <group input>
+          <addon>https://</addon>
+          <input type="text" form-control>
+        </group>
+
+
+        <h3>Tabs</h3>
+
+        <!-- <ul nav="tabs"> -->
+        <ul nav tabs>
+          <li active><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+
       </column>
 
       <column class="col-xs-4">
@@ -167,6 +190,9 @@
       </column>
       <column class="col-xs-6">
         <h2>genoma.sass</h2>
+        <p>
+          You can change everything! You are the paradigma ower!
+        </p>
         <pre>$button:" button"; # apply style in native HTML</pre>
         <pre>
 # &lt;button danger /&gt;

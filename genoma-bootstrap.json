@@ -52,7 +52,7 @@
       ".dropdown-menu":"--[menu]",
       ".dropdown-menu-right":"[right]",
       ".dropdown-menu-left":"[left]",
-      ".dropdown-toggle":"~[toggle]"
+      ".dropdown-toggle":"[toggle]"
     },
     ".dropup":"dropup",
     ".embed-responsive":"embed-responsive",
@@ -61,6 +61,29 @@
       ".form-inline":"form[inline]"
     },
     ".form-group":"group[form]",
+    ".form-group-sm":"group[form][small]",
+    ".form-group-lg":"group[form][large]",
+    ".glyphicon":"icon",
+    ".img":{
+      "_":"img",
+      ".img-circle":"[circle]",
+      ".img-responsive":"[responsive]",
+      ".img-rounded":"[rounded]",
+      ".img-thumbnail":"[thumbnail]"
+    },
+    ".input":{
+      ".input-lg":"[large]",
+      ".input-sm":"[small]",
+      ".input-xs":"[x-small]"
+    },
+    ".input-group":{
+      "_":"group[input]",
+      ".input-group-addon":"--addon",
+      ".input-group-sm":"[small]",
+      ".input-group-lg":"[large]"
+    },
+    ".input-group-btn":"group[button]",
+    ".jumbotron":"jumbotron",
     ".label":{
       "_":"label",
       ".label-default":"[default]",
@@ -82,23 +105,6 @@
       ".list-group-item-warning":" > *[warning]",
       ".list-group-item-danger":" > *[danger]"
     },
-    ".glyphicon":"icon",
-    ".img":{
-      "_":"img",
-      ".img-circle":"[circle]",
-      ".img-responsive":"[responsive]",
-      ".img-rounded":"[rounded]",
-      ".img-thumbnail":"[thumbnail]"
-    },
-    ".input":{
-      ".input-lg":"[large]",
-      ".input-sm":"[small]",
-      ".input-xs":"[x-small]"
-    },
-    ".input-group":"group[inputs]",
-    ".input-group-addon":"addon",
-    ".input-group-btn":"group[input-buttons]",
-    ".jumbotron":"jumbotron",
     ".media":"media",
     ".media-left":"media-left",
     ".media-body":"media-body",
@@ -189,10 +195,11 @@
       ".dl-horizontal":"dl[horizontal]",
       ".disabled":"[disabled]",
       ".divider":"[divider]",
-      ".embed-responsive-item":"[embed-responsive-item]",
-      ".embed-responsive-16by9":"[embed-responsive][e16x9]",
-      ".embed-responsive-4by3":"[embed-responsive][e4x3]",
+      ".embed-responsive-item":"[embed-responsive]",
+      ".embed-responsive-16by9":"[embed-responsive='e16x9']",
+      ".embed-responsive-4by3":"[embed-responsive='e4x3']",
       ".form-control":"[form-control]",
+      ".form-control-static":"[form-control][static]",
       ".hidden":"[hidden]",
       ".hidden-xs":"[hidden-xs]",
       ".hidden-sm":"[hidden-sm]",
